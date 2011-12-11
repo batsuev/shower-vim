@@ -6,6 +6,7 @@
 
 from string import Template
 import vim
+import os
 
 PLUGIN_DIR = vim.eval('fnameescape(fnamemodify(expand("<sfile>"), ":h"))')
 TMPL_INDEX = Template(open(os.path.join(PLUGIN_DIR,"shower_templates/index.html"), "r").read())
